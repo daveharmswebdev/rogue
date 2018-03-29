@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-body home">
+    <h5 class="card-title">Routed Element</h5>
+    <form ng-submit="ctrl.addAddress()">
+      <label for="addAddress">Add Address</label>
+      <input id="addAddress" type="text" class="form-control" ng-model="ctrl.address" placeholder="Add Address">
+      <button class="btn btn-default add-address" type="submit">Add Address</button>
+    </form>
+    <ul>
+      <li ng-repeat="item in ctrl.addresses track by $index">{{item}}</li>
+    </ul>
+    <p class="card-text">
+      {{ ctrl.message }}
+    </p>
+    <button ng-click="ctrl.clickIt()">Change Message</button>
+  </div>
+</div>

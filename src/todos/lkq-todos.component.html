@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-body todos">
+    <h5 class="card-title">{{$ctrl.title}}</h5>
+    <form class="col-6" ng-submit="$ctrl.addTodo()">
+      <label for="todo">New Todo</label>
+      <input type="text" id="todo" class="form-control" placeholder="New Todo" ng-model="$ctrl.newTodo">
+      <button class="btn btn-primary" type="submit">Add Todo</button>
+    </form>
+    <div class="card todos--list">
+        <div class="list-group-item" ng-repeat="todo in $ctrl.todos">
+          <todo-item
+            todo="todo"
+            on-remove="$ctrl.removeTodo($event)"
+            on-complete="$ctrl.updateComplete($event)"
+          ></todo-item>
+        </li>
+    </div>
+  </div>
+</div>
+
+

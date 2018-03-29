@@ -1,0 +1,26 @@
+.todos {
+  form {
+    button {
+      margin: 1rem 0;
+    }
+  }
+
+  .todos--list {
+    .delete-todo {
+      margin: 0 1rem;
+      color: red;
+    }
+
+    .delete-todo:hover {
+      cursor: pointer;
+    }
+
+    .todos--item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      // p, input {
+      // }
+    }
+  }
+}

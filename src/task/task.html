@@ -1,0 +1,13 @@
+<div class="tasks">
+  <h1>{{$ctrl.name}} works!</h1>
+
+  <ul>
+    <li ng-repeat="task in $ctrl.tasks">
+      {{task.name}}
+      <span>{{task.completed}}</span>
+      <button ng-click="task.complete()">Complete</button>
+    </li>
+  </ul>
+
+</div>
+

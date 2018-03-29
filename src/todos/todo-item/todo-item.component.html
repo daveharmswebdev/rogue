@@ -1,0 +1,9 @@
+  <div class="todos--item">
+    <p>{{$ctrl.todo.todo}}
+      <span class="delete-todo" ng-click="$ctrl.removeTodo($ctrl.todo.id)">X</span>
+    </p>
+    <input
+      type="checkbox"
+      ng-model="$ctrl.todo.complete"
+      ng-change="$ctrl.updateComplete($ctrl.todo)">
+  </div>

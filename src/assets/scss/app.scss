@@ -1,0 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
+@import '_colors';
+@import '../../home/home.scss';
+@import '../../footer/footer.scss';
+@import '../../todos/lkq-todos.scss';
+@import '../../task/tasks.scss';
+
+body {
+  background:  $bgcolor;
+}
+
